@@ -1,0 +1,348 @@
+/* START */
+p,
+pre,
+a,
+tr,
+td
+{
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.WINDOW
+{
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  width: auto;
+  height: 100%;
+  overflow: hidden;
+  display: block;
+  background: #ffffff;
+}
+
+.HEAD
+{
+  position: fixed;
+  left: 0%;
+  top: 0%;
+  width: 100%;
+}
+
+.FOOTER
+{
+  position: fixed;
+  left: 0%;
+  bottom: 0%;
+  width: 100%;
+}
+
+.MAIN
+{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.POL
+{
+  position: relative;
+  top: 0%;
+  height: 100%;
+  float: left;
+}
+
+.POL_HEAD
+{
+  position: relative;
+  top: 3vh;
+  width: 80%;
+  left: 10%;
+  text-align: center;
+}
+
+.POL_HEAD pre
+{
+  font-size: 0.9vw;
+  color: #d39da3;
+  direction: ltr;
+}
+
+.POL_MAIN
+{
+  margin-top: 5vh;
+  position: relative;
+  bottom: 0%;
+  height: 87vh;
+  width: 100%;
+  overflow: auto;
+  color: #d39da3;
+  text-align: center;
+}
+
+.POL_FOOTER
+{
+  position: relative;
+  width: 100%;
+  height: 0%;
+}
+
+.INFOR
+{
+  position: relative;
+  height: 100%;
+  float: left;
+  width: 68%;
+}
+
+.INFOR_HEAD
+{
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.ICON
+{
+  position: relative;
+  top: 3%;
+  width: 40%;
+  left: 30%;
+  height: auto;
+}
+
+#icon
+{
+  position: absolute;
+  width: 100%;
+  left: 0%;
+}
+
+.INFOR_MAIN
+{
+  position: relative;
+  width: 100%;
+  height: 65%;
+}
+
+.INFOR_MAIN
+{
+  position: absolute;
+  top: 40%;
+  text-align: center;
+  left: 42%;
+  width: 16%;
+}
+
+.INFOR_FOOTER
+{
+  position: relative;
+  width: 100%;
+  height: 15%;
+}
+.AdminName_and_version
+{
+  position: fixed;
+  bottom: 10px;
+  width: 20%;
+  text-align: center;
+  left: 40%;
+  color: #d39da3;
+}
+
+.AdminName_and_version p
+{
+  color: #b30015;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+}
+
+.AdminName_and_version a
+{
+  text-decoration: none;
+}
+
+.AdminName_and_version a p
+{
+  color: #d39da3;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+}
+
+
+#BTM_PLAY
+{
+  position: relative;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: auto;
+}
+
+#BTM_SNEAK
+{
+  position: relative;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: auto;
+}
+
+#BTM_WORDSNEAK
+{
+  position: relative;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: auto;
+}
+
+/* SmartFone - горизонтальная и вертикальная */
+@media only screen and (max-width: 960px) and (max-height: 960px)
+{
+  .POL,
+  .POL_L,
+  .POL_R
+  {
+    position: absolute;
+    top: 0px;
+    transition: 1s;
+    width: 100%;
+    float: none;
+    z-index: 1;
+    background: rgb(211,157,163);
+background: -moz-linear-gradient(left,  rgba(211,157,163,1) 0%, rgba(254,255,255,1) 2%, rgba(255,255,255,1) 98%, rgba(211,157,163,1) 100%);
+background: -webkit-linear-gradient(left,  rgba(211,157,163,1) 0%,rgba(254,255,255,1) 2%,rgba(255,255,255,1) 98%,rgba(211,157,163,1) 100%);
+background: linear-gradient(to right,  rgba(211,157,163,1) 0%,rgba(254,255,255,1) 2%,rgba(255,255,255,1) 98%,rgba(211,157,163,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d39da3', endColorstr='#d39da3',GradientType=1 );
+
+  }
+
+  .POL_L
+  {
+    left: -100%;
+  }
+
+  .POL_R
+  {
+    right: -100%;
+  }
+
+  .INFOR_HEAD input
+  {
+    position: absolute;
+    width: 15vw;
+    height: 100vh;
+    top: 0%;
+    background: #00ff00;
+    display: block;
+    border: 0px groove #ffffff;
+ outline: none;
+  }
+
+  .INFOR_HEAD input:active
+  {
+    border: 0px groove #ffffff;
+  }
+
+  .INFOR_HEAD input:nth-child(1)
+  {
+    left: 0%;
+    background: rgb(211,157,163);
+background: -moz-linear-gradient(left,  rgba(211,157,163,1) 0%, rgba(255,255,255,1) 13%);
+background: -webkit-linear-gradient(left,  rgba(211,157,163,1) 0%,rgba(255,255,255,1) 13%);
+background: linear-gradient(to right,  rgba(211,157,163,1) 0%,rgba(255,255,255,1) 13%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d39da3', endColorstr='#ffffff',GradientType=1 );
+  }
+
+  .INFOR_HEAD input:nth-child(3)
+  {
+    right: 0%;
+    background: rgb(255,255,255);
+background: -moz-linear-gradient(left,  rgba(255,255,255,1) 87%, rgba(211,157,163,1) 100%);
+background: -webkit-linear-gradient(left,  rgba(255,255,255,1) 87%,rgba(211,157,163,1) 100%);
+background: linear-gradient(to right,  rgba(255,255,255,1) 87%,rgba(211,157,163,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d39da3',GradientType=1 );
+  }
+
+  .INFOR
+  {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    transition: 0s;
+    float: none;
+  }
+
+  .INFOR_MAIN
+  {
+    left: 35%;
+    width: 30%;
+  }
+
+  .AdminName_and_version
+  {
+    left: 30%;
+    width: 40%;
+  }
+
+}
+/* PC */
+@media only screen  and (min-width: 960px), only screen and (min-height: 960px)
+{
+  .POL
+  {
+    width: 16vw;
+  }
+
+  .INFOR_HEAD input
+  {
+    display: none;
+  }
+}
+
+
+.ANDROID
+{
+  position: absolute;
+  z-index: = -1;
+  width: 100%;
+  height: 100%;
+  left: 0%;
+  top: 0%;
+  background: #ffffff;
+  text-align: center;
+}
+
+.ANDR_MAIN
+{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 50vh;
+  transition: 0s;
+  transform: translate(-50%,-50%);
+  background: #f0f0f0;
+}
+
+.ANDR_MAIN a
+{
+  position: absolute;
+  display: block;
+  font-size: 2em;
+  bottom: 0%;
+  left: 50%;
+  transform: translate(-50%,0%);
+}
+
+.ANDR_MAIN p
+{
+  font-size: 2.5em;
+}
+
+/*  */
